@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> 
+            <i class='bx bx-headphone'></i> 
+            SoundBox
+         </a>
+
+        <ul class="navegação">
+            <li>
+                <a href="#">Visão geral</a>
+            </li>
+
+            <li>
+                <a href="#">teach Specs</a>
+            </li>
+
+            <li>
+                <a href="#">Reviews</a>
+            </li>
+
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            
+            <div id="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+           
+        </div>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="home-img">
+                <img src="imagens/product1.png" class="one">
+            </div>
+
+            <div class="home-text">
+                <h1>Wireless <br> Headphones</h1>
+                <h5>The smarter way to listen</h5>
+                <h3>$199.00</h3>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <div class="main">
+            <div class="row">
+                <li>
+                    <img src="imagens/main1.png" onclick="slider('imagens/product1.png')" alt="">
+                </li>
+            </div>
+
+            <div class="row2">
+                <li>
+                    <img src="imagens/main2.png" onclick="slider('imagens/product2.png')" alt="">
+                </li>
+            </div>
+
+            <div class="row3">
+                <li>
+                    <img src="imagens/main3.png" onclick="slider('imagens/product3.png')" alt="">
+                </li>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function slider(imagem){
+            document.querySelector('.one').src = imagem
+        }
+    </script>
+
+</body>
+</html>
